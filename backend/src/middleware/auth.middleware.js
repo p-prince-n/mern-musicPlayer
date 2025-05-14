@@ -15,7 +15,7 @@ export const requireAdmin=async()=>{
 
 
     }catch(e){
-        return res.status(500).json({message: e.message})
+        return next({message: e})
 
     }
 }
